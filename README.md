@@ -110,7 +110,7 @@ What this program offers?
 
 
 ## Libraries used in this project
-`os` `shutil` `re` `sys` `platform` `time` `pyfiglet` ``
+`os` `shutil` `re` `sys` `platform` `time` `pyfiglet`
 
 
 ## Project's root directory
