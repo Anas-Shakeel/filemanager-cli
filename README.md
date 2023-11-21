@@ -1,5 +1,8 @@
 # File Manager
 
+## Note:
+I am currently working on this `README.md` file...
+
 ## Description:
 
 `File manager` is written specifically for Windows in python.<br>
