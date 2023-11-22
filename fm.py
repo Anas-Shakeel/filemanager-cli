@@ -253,7 +253,7 @@ class FileManager:
         # delete file
         os.remove(filepath)
 
-    def delete_files(self, directory: str, ext=".txt", whole_tree=False):
+    def delete_files(self, directory: str, ext: str, whole_tree=False):
         """
         ### Delete Files
         Deletes files of `ext` extension from a `directory`
@@ -973,7 +973,8 @@ class FileManager:
         master['modified'] = f_modified
         master['accessed'] = f_accessed
         master['files'] = file_count
-        master['folders'] = self.find_number_of_dirs(directory, whole_tree=True)
+        master['folders'] = self.find_number_of_dirs(
+            directory, whole_tree=True)
 
         return master
 
