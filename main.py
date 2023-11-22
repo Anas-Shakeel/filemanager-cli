@@ -1,10 +1,10 @@
-from fm import FileManager
-from pyfiglet import Figlet
-from time import sleep
-from os import system
-from os import path
 import sys
 import re
+from os import path
+from os import system
+from time import sleep
+from pyfiglet import Figlet
+from fm import FileManager
 
 
 def main():
