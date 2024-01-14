@@ -388,6 +388,8 @@ class FileManager:
         'C:\\file.txt'
         ```
         """
+        if not os.path.exists(filepath):
+            return filepath
 
         # extract filename and extension
         filename = os.path.splitext(os.path.basename(filepath))[0]
@@ -406,13 +408,12 @@ class FileManager:
 
         # if file exists
         if os.path.exists(new_name):
-            for i in range(1000000):
-                # create a new name
+            i = 0
+            while (i >= 0):
                 new_name = f"{os.path.join(root, filename)} {i}{ext}"
-
-                # if new_name is non-existent, return
                 if not os.path.exists(new_name):
                     return new_name
+                i += 1
         else:
             return new_name
 
